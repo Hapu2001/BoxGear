@@ -1,0 +1,62 @@
+ 
+<div class="container-customer">
+  <div class="container-customer-header">
+      <h4>Cusomter Infomation</h4>
+  </div>
+  <div class="container-invoice-content">
+      <div class="container-invoice-content-1">
+          <div class="show">
+              <label for="">Show</label>
+              <select name="" id="">
+                  <option value="">5</option>
+                  <option value="">10</option>
+              </select>
+          </div>
+          <div class="search">
+              <label for="">Search:</label>
+              <input type="text" name="ten"  [(ngModel)]="ten" (ngModelChange)="Search()">
+          </div>
+      </div>
+      <div class="container-invoice-content-2">
+          <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th  scope="col" >ID # <span class="fa fa-sort" aria-hidden="true" ></span></th>
+                  <th scope="col" (click)="sort('ten')" >Product<i class="fa fa-sort" aria-hidden="true"></i></th>
+                  <th scope="col">Image  <i class="fa fa-sort" aria-hidden="true"></i></th>
+                  <th scope="col">Price <i class="fa fa-sort" aria-hidden="true"></i></th>
+                  <th scope="col">Quantity <i class="fa fa-sort" aria-hidden="true"></i></th>
+                  <th scope="col">Action </th>
+   
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let p of products | orderBy: key: reverse; index as i">
+                  <td  routerLink="/detailProductAdmin/{{p._id}}" routerLinkActive="active">{{i+1}}</td>
+                  <td>{{p.ten}}</td>
+                  <td ><img src="{{p.hinh}}" alt="" style="width: 100px;"></td>
+                  <td>{{p.tien}}</td>
+                  <td>{{p.soLuong}}</td>
+                 
+                
+                  <td><i routerLink="/detailProductAdmin/{{p._id}}" routerLinkActive="active"  _ngcontent-yed-c55="" aria-hidden="true" class="fa fa-pencil" style="padding:6px 12px;"></i>
+                      <i (click)="onDelete(p._id)" _ngcontent-lpn-c55="" aria-hidden="true" class="fa fa-trash" style="padding:6px 12px;"></i></td>
+                </tr>
+                
+              </tbody>
+            </table>
+      </div>
+      <div class="container-invoice-content-3">
+          <div class="content-3-showing">
+              <div>Showing 1 to 5 of 30 entries</div>
+          </div>
+          <div class="content-3-transition">
+                  <div class="content-3-transition-child">
+                      <div>Previous</div>
+                      <div style="background-color: #7258db;">1</div>
+                      <div>Next</div>
+                  </div>
+          </div>
+      </div>
+  </div>
+</div>

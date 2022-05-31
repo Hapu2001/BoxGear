@@ -1,0 +1,115 @@
+[{
+    
+    "ten":"GVN Titan M",
+    "tien":7990000,
+    "hinh":"../Logo/SP1.png",
+    "soLuong":27,
+    "thongSo":[
+            "ASUS PRIME H510M-K",
+            "Intel Pentium G6405 / 4MB / 4.1GHz / 2 Nhân 4 Luồng / LGA 1200",
+            "Kingston Fury Beast Black 1x8GB bus 2666"
+        ]
+    
+},
+{
+   
+    "ten":"GVN Ventus M",
+
+    "tien":8990000,
+  
+    "hinh":"../Logo/SP2.jpg",
+    "soLuong":18,
+    "thongSo":[
+        "ASUS PRIME H510M-K",
+        "Intel Pentium G6405 / 4MB / 4.1GHz / 2 Nhân 4 Luồng / LGA 1200",
+        "Kingston Fury Beast Black 1x8GB bus 2666"
+    ]
+    
+},
+{
+   
+    "ten":"GVN Ghost S",
+  
+    "tien":26990000,
+
+    "hinh":"../Logo/SP3.jpg",
+    "soLuong":18,
+    "thongSo":[
+            "GIGABYTE B560M AORUS PRO (rev. 1.0)",
+            "Intel Core i5 11400F / 12MB / 4.4GHZ / 6 nhân 12 luồng / LGA 1200",
+            "Kingston Fury Beast Black 1x8GB bus 26666"
+        ]
+    
+},
+{
+   
+    "ten":"GVN Titan M",
+
+    "tien":7990000,
+  
+    "hinh":"../Logo/SP4.jpg",
+    "soLuong":18,   
+     "thongSo":[
+            "GIGABYTE B560M AORUS PRO (rev. 1.0)",
+            "Intel Core i5 11400F / 12MB / 4.4GHZ / 6 nhân 12 luồng / LGA 1200",
+            "Kingston Fury Beast Black 1x8GB bus 3000"
+        ]
+    
+},
+{
+    
+    "ten":"GVN Phantom S",
+
+    "tien":31690000,
+
+    "hinh":"../Logo/SP5.jpg",
+    "soLuong":26,
+    "thongSo":[
+            "MSI MAG B560M MORTAR",
+            "Intel Core i5 11400F / 12MB / 4.4GHZ / 6 nhân 12 luồng / LGA 1200",
+            "Kingston Fury Beast Black DDR4 1x8GB 3200"
+        ]
+    
+},
+{
+   
+    "ten":"ROG strix SCAR 15",
+
+    "tien":24990000,
+
+    "hinh":"../Logo/SP6.png",
+    "soLuong":32,
+    "thongSo":[
+            "NVIDIA GeForce RTX 3070 6GB GDDR6 + AMD Radeon™ Graphics",
+            "AMD Ryzen 9 5900HX 3.3GHz up to 4.6GHz 16MB",
+            "16GB (8GBx2) DDR4 3200MHz (2x SO-DIMM socket, up to 64GB SDRAM)"
+        ]
+    
+},
+{
+   
+    "ten":"Card màn hình GIGABYTE GTX 1660 Super OC-6G",
+
+    "tien":12990000,
+    "hinh":"../Logo/SP7.jpg",
+    "soLuong":23,
+    "thongSo":[
+        "NVIDIA GeForce RTX 3070 6GB GDDR6 + AMD Radeon™ Graphics",
+        "AMD Ryzen 9 5900HX 3.3GHz up to 4.6GHz 16MB",
+        "16GB (8GBx2) DDR4 3200MHz (2x SO-DIMM socket, up to 64GB SDRAM)"
+    ]
+},
+{
+    
+    "ten":"Acer Aspire 7 A15",
+
+    "tien":21990000,
+    "hinh":"../Logo/SP8.jpg",
+    "soLuong":20,
+    "thongSo":[
+        "NVIDIA GeForce RTX 3070 6GB GDDR6 + AMD Radeon™ Graphics",
+        "AMD Ryzen 9 5900HX 3.3GHz up to 4.6GHz 16MB",
+        "16GB (8GBx2) DDR4 3200MHz (2x SO-DIMM socket, up to 64GB SDRAM)"
+    ]
+}
+]

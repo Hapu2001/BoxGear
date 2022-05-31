@@ -1,0 +1,128 @@
+
+.container-invoice{
+    margin: 0 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.container-invoice-header{
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-invoice-header h4{
+    font-weight: 300;
+    font-size: 22px;
+    color: #464855;
+}
+.container-invoice-content-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 21px;
+    color: #464855;
+    margin-top: 7px;
+}
+.show label, .search label{
+font-size: 1rem;
+margin-right: 3px;
+}
+.show select, .search input{
+    border-radius: 4px;
+    border: 1px solid #babfc7;
+    padding: 3px;
+    font-size: 0.9rem;
+
+}
+.table-bordered thead tr th{
+    padding:10.5px 28px ;
+    color: #464855;
+    font-weight: 600;
+    
+
+}
+thead{
+    border-bottom: transparent;
+}
+.table-bordered thead tr th .fa {
+   margin-left: 40px;
+   font-size: 12px;
+}
+.table-bordered tbody tr td{
+    padding:10.5px 28px ;
+    color: #464855;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+.container-modal2{
+    position: fixed;
+    top: 0;
+    width: calc(100% - 300px);
+    height: 100%;
+    padding: 30px;
+    background-color: rgba(15, 15, 15, 0.7);
+    display: none;
+}
+.container-modal2.active{
+    display: block;
+}
+.modal2{
+    width: 450px;
+    margin: 30px auto;
+    background-color: white;
+   
+    border-radius: 7px;
+}
+.modal2-content{
+    padding: 16px;
+}
+.modal2-header{
+    padding: 16px;
+    border-bottom: 1px solid #dee2e6;
+}
+.content-3-showing{
+    flex: 0 0 40%;
+}
+.content-3-showing div{
+    font-size: 16px;
+    color: #464855;
+    padding: 10px 12px;
+}
+.container-invoice-content-3{
+    display: flex;
+    width: 100%;
+   
+}
+.content-3-transition{
+    display: flex;
+    flex: 0 0 60%;
+    
+}
+.content-3-transition-child{
+    display: flex;
+    margin-left: auto;
+    padding: 10px 12px;
+}
+.content-3-transition-child div{
+    padding: 6px 12px;
+    background-color: #f0f0f0;
+    color: #464855;
+    border-radius: 3px;
+}
+@media screen and (max-width: 992px){
+   .container-modal2{
+       width: 100%;
+   }
+        .modal2{
+         width: 350px;
+        margin: 0 auto;
+        }
+        
+}
+@media screen and (max-width: 500px){
+    .container-invoice-content-1{
+        width: 400px;
+        overflow-x: scroll;
+    
+    }
+}

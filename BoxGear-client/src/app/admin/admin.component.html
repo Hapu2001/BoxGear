@@ -1,0 +1,60 @@
+<div class="container2" >
+ 
+  <div class="navigation  gradient-custom-2">
+      <ul>
+          <li>
+              <span class="iconLogo"></span>
+              <h2 class="title">BoxGear</h2>
+          </li>
+          <li  routerLink="/doashboard" routerLinkActive="active">
+              <span class="iconLogo"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+              <span class="title">Dashboard</span>
+          </li>
+          <li  routerLink="/invoice" routerLinkActive="active" >
+                 <span class="iconLogo" ><i class="fa fa-archive" aria-hidden="true"></i></span>
+              <span class="title">Orders</span>
+          </li>
+
+          <li routerLink="/ProductsList" routerLinkActive="active">
+              <span class="iconLogo"><i class="fa fa-tags" aria-hidden="true"></i></span>
+              <span class="title">Products</span>
+          </li>
+          <li routerLink="/manageCustomer" routerLinkActive="active">
+              <span class="iconLogo"><i class="fa fa-user" aria-hidden="true"></i></span>
+              <span class="title">Customers</span>
+          </li>
+          <li routerLink="/consulting" routerLinkActive="active">
+            <span class="iconLogo"><i class="las la-phone"></i></span>
+            <span class="title">Supports</span>
+        </li>
+          <li  routerLink="/revenue" routerLinkActive="active">
+              <span class="iconLogo"><i class="las la-blog"></i></span>
+              <span class="title">Revenue</span>
+          </li>
+          
+          
+      </ul>
+  </div>
+
+  <div class="content" style="background-color:#ebeef0 ;">
+          <div class="topbar">
+              <div class="toggle" (click)="toggleMenu()"><span class="fa fa-bars"></span></div>
+              <div class="search">
+                  <input type="search" name="" id="" placeholder="search here">
+                  <span class="fa fa-search" aria-hidden="true" ></span>
+              </div>
+              <div class="admin" >
+                  <img src="assets\image\avatar.jpg" alt=""  (click)="toggleOpenProfile()">
+              </div>
+              <div class="header-left-profile">
+                <div> <i class="fa fa-user" aria-hidden="true"></i>Profile</div> 
+                <div  routerLink="/home" routerLinkActive="active"> <i  class="fa fa-lock" aria-hidden="true"></i>User</div> 
+                   <div style="font-size: 1px;border-top: 1px solid #eaecf4"></div>
+                <div routerLink="/signin" routerLinkActive="active"> <i class="fa fa-sign-out" aria-hidden="true"></i>Logout</div> 
+            </div>
+          </div>
+          <div ><router-outlet></router-outlet></div>
+  </div>
+  
+</div>
+  

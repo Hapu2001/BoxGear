@@ -1,0 +1,108 @@
+<div class="container-invoice">
+    <div class="container-invoice-header">
+        <h4> Consulting</h4>
+        <div>
+            <button class="btn btn-primary" value="" (click)="toggleModal()">Add</button>
+        </div>
+    </div>
+    <div class="container-invoice-content">
+        <div class="container-invoice-content-1">
+            <div class="show">
+                <label for="">Show</label>
+                <select name="" id="">
+                    <option value="">5</option>
+                    <option value="">10</option>
+                </select>
+            </div>
+            <div class="search">
+                <label for="">Search:</label>
+                <input type="Search">
+            </div>
+        </div>
+        <div class="container-invoice-content-1">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col" >Customers <span class="fa fa-sort" aria-hidden="true" ></span></th>
+                    <th scope="col">Staff <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Service <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Consulting content
+                        <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Level <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Status <i class="fa fa-sort" aria-hidden="true"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let p of supports" >
+                    <td >{{p.customers}}</td>
+                    <td>{{p.staff}}</td>
+                    <td>{{p.service}}</td>
+                    <td style="word-break: break-word;">{{p.consultingContent}}</td>
+                    <td>{{p.level}}</td>
+                    <td><span style="padding:6px;background-color:#198754;font-weight: 700;border-radius: 7px;color: white;text-align: center;font-size: 0.75em;">completed</span> </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+        <div class="container-invoice-content-3">
+          <div class="content-3-showing">
+              <div>Showing 1 to 5 of 30 entries</div>
+          </div>
+          <div class="content-3-transition">
+                  <div class="content-3-transition-child">
+                      <div>Previous</div>
+                      <div style="background-color: #7258db;">1</div>
+                      <div>Next</div>
+                  </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="container-modal2">
+    <div class="modal2">
+        <div class="modal2-header">
+            <h5>Add Consulting</h5> 
+        </div>
+        <div class="modal2-content">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Customer</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Customer">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Staff</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="staff">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Content</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-7">
+                    <label for="inputCity">Service</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-5">
+                    <label for="inputState">Level</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>High</option>
+                      <option>Medium</option>
+                      <option> Low</option>
+                    </select>
+                  </div>
+                 
+                  
+                </div>
+               
+                <div style="display:flex;justify-content: flex-end;">
+                    <button type="submit" class="btn btn-secondary" style="margin-right:12px;" (click)="toggleModal()">Done</button>
+                    <button type="submit" class="btn btn-primary" >Add</button>
+            </div>
+              </form>
+        </div>
+    </div>
+</div>

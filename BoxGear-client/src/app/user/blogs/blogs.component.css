@@ -1,0 +1,35 @@
+.container--post{
+    display: flex;
+    margin: 25px 0px;
+    padding: 0px 25px;
+}
+.container--post *{
+color:  #333333;
+}
+.post--head{
+    font-size: 24px;
+}
+.post--detail{
+    text-align: right;
+    padding-right: 25px;
+}
+.post__img img{
+    width: 300px;
+}
+.content{
+    padding-top: 25px;
+    padding-left: 20px;
+}
+.post--head:hover a,.post--detail:hover a{
+ color: #dd3333 
+}
+@media screen and (max-width: 768px)  {
+    .container--post{
+        flex-direction: column;
+   
+    }
+    .post__img{
+        width: 200px;
+    }
+
+}

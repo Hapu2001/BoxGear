@@ -1,0 +1,79 @@
+
+ 
+<div class="container-customer">
+    <div class="container-customer-header">
+        <h4>Revenue</h4>
+    </div>
+    <div class="container-invoice-content">
+        <div class="container-invoice-content-1" style="justify-content: left;">
+            <div class="show">
+               <div> <label for="">Thời gian:</label></div>
+                <select name="" id="">
+                    <option value="">Tháng này</option>
+                    <option value="">k tính được</option>
+                </select>
+            </div>
+            <div class="show" style="margin-left: 20px ;">
+                <div> <label for="">Nguồn tiền:</label></div> 
+                <select name="" id="">
+                    <option value="">Tổng quỹ</option>
+                    <option value="">Tiền mặt</option>
+                    <option value="">Ngân hàng</option>
+                </select>
+            </div>
+        </div>
+        <div class="container-invoice-content-1">
+            <div class="show">
+                <label for="">Show</label>
+                <select name="" id="">
+                    <option value="">5</option>
+                    <option value="">10</option>
+                </select>
+            </div>
+            <div class="search">
+                <label for="">Search:</label>
+                <input type="text" name="firstName"   >
+            </div>
+        </div>
+        <div class="container-invoice-content-2">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th  scope="col" > # <span class="fa fa-sort" aria-hidden="true" ></span></th>
+                    <th scope="col" >Type of ticket                        <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Reason <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    
+                    <th scope="col">Date of record
+                        <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Receiver/Submitter
+                        <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Value<i class="fa fa-sort" aria-hidden="true"></i></th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let p of revenues; index as i">
+                    <td>{{i+1}}</td>
+                    <td>{{p.typeOfTicket}}</td>
+                    <td>{{p.reason}} </td>
+                    <td>{{p.dateOfRecord}}</td>
+                    <td>{{p.receiver}}</td>
+                    <td>{{p.Value}}</td>
+                  
+                </tbody>
+              </table>
+        </div>
+        <div class="container-invoice-content-3">
+            <div class="content-3-showing">
+                <div>Showing 1 to 5 of 30 entries</div>
+            </div>
+            <div class="content-3-transition">
+                    <div class="content-3-transition-child">
+                        <div>Previous</div>
+                        <div style="background-color: #7258db;">1</div>
+                        <div>Next</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

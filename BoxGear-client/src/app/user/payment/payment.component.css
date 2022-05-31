@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+body *{
+    color: #333333;
+    font-family: Helvetica Neue, sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+}
+.infoCustomer{
+width: 50%;
+}
+.header{
+    font-size: 30px;
+}
+.infoCustomer--row, .form--row,.infoProduct{
+    margin: 15px 0px;
+}
+.form__input, .form__select,.infroProduct__input{
+    height: 40px;
+    width: 200px;
+    border-radius: 4px;
+    border: 0.5px solid rgb(133, 133, 133) ;  
+    padding-left: 5px;
+}
+.submit{
+    background-color: #338dbc;
+   
+    width: 300px;
+    height: 60px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+label{
+    display: inline-block;
+}
+.form--row{
+    max-width: 200px;
+ 
+  
+}
+.row--thanhtoan{
+    max-width: 300px;
+}
+.submit:hover{
+    background-color: #306b8b;
+}
+.infoProduct{
+    border-left: 1px solid gray;
+    padding-left: 20px;
+    width: 40%;
+    background-color:#fafafa;
+    height: 80vh;
+}
+.infroProduct--row{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.infroProduct__submit{
+    background-color: #c8c8c8;
+    border-radius: 4px;
+    height: 40px;
+    border: 1px solid #c8c8c8;
+    color: white;
+    font-weight: 500;
+}
+.infroProduct__submit:hover{
+    background-color: #338dbc;
+}
+@media screen and (max-width: 768px)  {
+    .container{
+        flex-direction: column;
+        width: 367px;
+       
+    }
+    .infoProduct{
+        border-left: none;
+    }
+}

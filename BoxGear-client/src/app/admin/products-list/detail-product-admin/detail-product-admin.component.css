@@ -1,0 +1,11 @@
+.container{
+    padding: 20px;
+}
+.container form {
+    background-color:white;
+    padding: 10px;
+    border-radius: 7px;
+}
+.container-header{
+    font-weight: 300;
+}

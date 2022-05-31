@@ -1,0 +1,178 @@
+<!-- <div class="header--container">
+   
+    <div class="header--col-1" routerLink="/home" routerLinkActive="active">
+         <img src="assets/logo.png" alt="" >
+    </div>
+    <div class="header--col-2">
+        
+        <div class="header--col-2-style header--col-2-row-1 " id="header--col-2-row-1">
+           <div id="close-menu"><span class="fa fa-close"></span></div> 
+            <div class="header--col-2-row-1-child" routerLink="/Admin" routerLinkActive="active"  > <span class="fa fa-sign-in" ></span> Quản trị viên
+               </div>
+            <div class="header--col-2-row-1-child" routerLink="/cart" routerLinkActive="active" ><span class="fa fa-user" ></span> Người dùng</div>
+            <div class="header--col-2-row-1-child" routerLink="/signin" routerLinkActive="active"><span class="fa fa-sign-out" ></span> Thoát</div>
+            
+        </div>
+        <div class="header--col-2-style header--col-2-row-2">
+        <div class="col-2-row-2-col-1" id="col-2-row-2-col-1">
+            <div class="col-2-row-2-col-1-child" routerLink="/home" routerLinkActive="active">  TRANG CHỦ</div>
+            <div class="col-2-row-2-col-1-child col-2-row-2-col-1-child-2">SẢN PHẨM <span class="fa fa-caret-right" id="menu-product"></span>
+                <div class=" col-2-row-2-col-1-child-2-child" id="col-2-row-2-col-1-child-2-child" >                    
+                    <div>Laptop</div>
+                    <div> PC</div>
+                    <div> Màn hình</div>
+                    <div> Bàn phím</div>
+                    <div> Chuột</div>
+                    <div> Thiết bị mạng</div>
+                </div>
+            </div>
+            <div class="col-2-row-2-col-1-child col-2-row-2-col-1-child-3" id="col-2-row-2-col-1-child-3"  routerLink="/blog" routerLinkActive="active" >BLOG</div>   
+        </div>
+        <div class="col-2-row-2-col-2">
+           <div class="col-2-row-2-col-2-child col-2-row-2-col-2-child-1" id="col-2-row-2-col-2-child-1"><span id="btn-menu" class="fa fa-bars "></span></div> 
+           <div  class="col-2-row-2-col-2-child      " >
+               <form action="">
+                   <input type="search" class="col-2-row-2-col-2__input">
+                 <span class="fa fa-search "></span>
+            </form>
+            </div>
+           <div class="col-2-row-2-col-2-child "> <span class="fa fa-cart-plus"  routerLink="/cart" routerLinkActive="active"></span></div>
+        </div>
+        </div> 
+    </div>
+</div> -->
+
+<div class="container-header" >
+    <div class="header-child">
+        <div class="header">
+            <div><img src="assets\logo.png" alt="" style="width: 80px;"></div>
+            <div class="header-center" style="position:relative ; z-index: 1000;">
+                <div class="header-navigation" >
+                        <div routerLink="/home" routerLinkActive="active">Trang chủ</div>
+                        <div>Sản phẩm</div>
+                        <div>Blog</div>
+                </div>
+                <div class="header-cart">
+                    <div  (click)="toggleOpenCart()" style="font-size: 18px; font-weight: 500;">Giỏ hàng(1)</div>
+                    <div class="cart-modal">
+                        <div class="modal-cart" >
+                           <div class="modal-cart-header">
+                               <H4>Your cart</H4> 
+                               <span (click)="toggleCloseCart()"  class="fa fa-times" aria-hidden="true"></span>
+                            </div>
+                           <div >
+                               <form action="">
+                               <div class="cart-listProduct">
+                                    <ul>
+                                        <li>
+                                           <div><img src="assets\image\f460b7760f6bb30d4d861562f7718bfb.jpg" alt="" style="height: 50px;"></div> 
+                                           <div>
+                                               <h6>UCHIHA OBITO</h6>
+                                               <span>Số lượng: 01</span>
+                                            <div><span> 6.690.000</span></div>
+                                            <div>
+                                                <input type="number" style="height: 25px; border-radius: 7px; ">
+                                            </div>
+                                            </div>
+                                           
+                                            <span  style="font-size:20px;" class="fa fa-times" aria-hidden="true"></span>
+                                        </li>
+                                    </ul>
+                               </div>
+                               <div class="cart-totalPrice">
+                                   <p>Tổng</p>
+                                   <span>6.690.000</span>
+                                </div>
+                                <div class="cart-totalPrice">
+                                    <p>Ưu đãi</p>
+                                    <span>0</span>
+                                 </div>
+                                 <div class="cart-totalPrice">
+                                    <p>Thành tiền</p>
+                                    <span>6.690.000</span>
+                                 </div>
+                                <div style="text-align:center;"> <input type="button" class="btn btn-primary" value="Thanh toán" style="background-color:#f85757 ; border: 1px solid #f85757; font-size: 24px;font-weight: 500;border-radius: 9px;" ></div>
+                           </form>
+                        </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="header-left" > 
+                <i class="fa fa-bars" aria-hidden="true" (click)="toggleOpenMenu()"></i>
+                <div style="position:relative ; z-index: 901;">
+                <div class="header-search">
+                    <i (click)="toggleSearch()"  class="fa fa-search" aria-hidden="true"  style="font-size: 24px;"></i>
+                </div>
+                <div class="header-search-form">
+                    <form action="">
+                        <input type="text" placeholder="Search here" class="input-text">
+                        <input type="button" value="Search" class="input-button">
+                    </form>
+                </div>
+                 </div>
+                 <div (click)=" toggleOpenProfile()" style="height: 45px;width: 45px; border-radius: 50%;background-color: #f85757;text-align: center;line-height: 45px;">
+                        <img src="assets\image\f460b7760f6bb30d4d861562f7718bfb.jpg" alt="" style="border-radius:50% ;">
+                 </div>
+                 <div class="header-left-profile">
+                     <div> <i class="fa fa-user" aria-hidden="true"></i>Profile</div> 
+                     <div  routerLink="/doashboard" routerLinkActive="active"> <i  class="fa fa-lock" aria-hidden="true"></i>Admin</div> 
+                        <div style="font-size: 1px;border-top: 1px solid #eaecf4"></div>
+                     <div routerLink="/signin" routerLinkActive="active"> <i class="fa fa-sign-out" aria-hidden="true"></i>Logout</div> 
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="div--container">
+<router-outlet></router-outlet>
+<div class="content--footer">
+    <div class="content--footer--col--1">
+        <p>ĐĂNG KÝ NHẬN TIN</p>
+        <hr class="footer--head__hr">
+        <form action="">
+        <input class="footer__input--email" type="email" name="" id="" placeholder="Nhận email của bạn">
+         <input type="submit" value="Gửi" class="footer__submit"   >
+        </form>
+    </div>
+    <div class="content--footer--col--1">
+        <p>HỖ TRỢ</p>
+        <hr class="footer--head__hr">
+        <div>
+            <ul class="footer__ul">
+                <li >  Tìm kiếm</li>
+                <hr>
+                <li>  Giới thiệu </li>
+                <hr>
+                <li>  Chính sách đổi trả</li>
+                <hr>
+                <li>Chính sách bảo mật</li>
+                <hr>
+                <li>  Điều khoản dịch vụ</li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="content--footer--col--1">
+        <p>GIỚI THIỆU</p>
+        <hr class="footer--head__hr">
+        <div>
+            <ul class="footer__ul">
+                <li>Email: hotro@boxgear.com</li>
+                <hr>
+                <li>Hotline: 1900.868.9999</li>
+                <hr>
+                <li>Công ty TNHH BOXgear</li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="content--footer--col--1">
+        <p>FACEBOOK</p>
+        <hr class="footer--head__hr">
+    </div>
+</div>
+</div>

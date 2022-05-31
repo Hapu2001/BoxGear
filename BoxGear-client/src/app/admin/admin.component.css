@@ -1,0 +1,203 @@
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee4c24, #fb3939, #dd364c, #b44554);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee4c24, #fb3939, #dd3644, #b4454e);
+    }
+    
+    .header-left-profile{
+        display: none;
+        position:absolute; top: 76px;right: 17px;background-color: white; width: 130px;
+        border-radius: 12px;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    }
+    .header-left-profile.active{
+        display: block;
+    }
+    .header-left-profile div {
+        padding: 4px 24px;
+    }
+    .header-left-profile div .fa {
+        margin-right: 8px;
+        color: #3a3b45;
+    }
+.container2 {
+    position: relative;
+    width: 100%; 
+    margin: 0px;
+    padding: 0px;
+
+}
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(11, 7, 112);
+    transition: 0.5s;
+    color: white;
+} 
+.navigation ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    list-style: none;
+    width: 100%;
+    padding-left: 0px;
+}
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.iconLogo{
+    position: relative ;
+    height: 100px;
+    min-width: 60px;
+    display: block;
+    line-height: 100px;
+    text-align: center;
+}
+.iconLogo .fa, .iconLogo .las{
+    font-size: 26px;
+}
+.title{
+    position: relative;
+    display: block ;
+    height: 100px;
+    line-height: 100px;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: 500;
+}
+.content{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+}
+.topbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.toggle{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    text-align: center;
+    
+  
+}
+.toggle .fa {
+    font-size: 26px;
+}
+.toggle::before{
+    
+    line-height: 60px;
+}
+.navigation.active{
+    width: 60px;
+}
+.content.active{
+    width: calc(100% - 60px); 
+    left: 60px;
+}
+.search {
+    width: 400px;
+    margin: 0 10px;
+    position: relative;
+   
+}
+.search input {
+    width: 100%;
+    border-radius: 7px;
+    height: 40px;
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 40px;
+
+}
+.search  .fa {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+}
+.admin{
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 50px;
+}
+.admin img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+@media screen and (max-width: 992px) { 
+   .navigation{
+    left: -300px;
+   }
+   .navigation.active{
+       left: 0px;
+       width: 300px;
+   }
+   .content{
+       width: 100%;
+       left: 0px;
+   }
+   .content.active{
+    width: calc(100% - 300px); 
+    left: 300px;
+}
+  
+    
+}
+
+
+@media screen and (max-width: 480px){
+    .navigation{
+        width: 100%;
+        z-index: 10000;
+       left: -100%
+    }
+    .navigation.active{
+        left:0 ;
+        width: 100%;
+      
+    }
+    .toggle.active{
+        z-index: 10000;
+        position: fixed;
+        right: 0;
+    }
+    .content.active{
+        width: 100%; 
+        left: 0;
+    }
+}
+
+
+
+.detailHead{position:relative; display: none;
+transition: 0.5s;}
+.detailHead.active{
+    display: block;
+    position: relative!important; 
+}

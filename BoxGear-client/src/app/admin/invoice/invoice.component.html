@@ -1,0 +1,60 @@
+<div class="container-invoice">
+    <div class="container-invoice-header">
+        <h4> Invoice</h4>
+        <div>
+            <button class="btn btn-primary" value="">Excel</button>
+        </div>
+    </div>
+    <div class="container-invoice-content">
+        <div class="container-invoice-content-1">
+            <div class="show">
+                <label for="">Show</label>
+                <select name="" id="">
+                    <option value="">5</option>
+                    <option value="">10</option>
+                </select>
+            </div>
+            <div class="search">
+                <label for="">Search:</label>
+                <input type="Search">
+            </div>
+        </div>
+        <div class="container-invoice-content-1">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col" >Invoice # <span class="fa fa-sort" aria-hidden="true" ></span></th>
+                    <th scope="col">Date <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Customer Name <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Due <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Amount <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Status <i class="fa fa-sort" aria-hidden="true"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let p of orders; index as i">
+                    <td >{{i+1}}</td>
+                    <td>{{p.Date}}</td>
+                    <td>{{p.CustomerName}}</td>
+                    <td>{{p.due}}</td>
+                    <td>{{p.status}}</td>
+                    <td><span style="padding:6px;background-color:#198754;font-weight: 700;border-radius: 7px;color: white;text-align: center;font-size: 0.75em;">completed</span> </td>
+                  </tr>
+                               </tbody>
+              </table>
+        </div>
+        <div class="container-invoice-content-3">
+          <div class="content-3-showing">
+              <div>Showing 1 to 5 of 30 entries</div>
+          </div>
+          <div class="content-3-transition">
+                  <div class="content-3-transition-child">
+                      <div>Previous</div>
+                      <div style="background-color: #7258db;">1</div>
+                      <div>Next</div>
+                  </div>
+          </div>
+      </div>
+    </div>
+    
+</div>

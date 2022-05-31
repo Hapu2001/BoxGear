@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="container-header"><h4>Products Detail</h4> </div>
+  <form #productForm="ngForm" (ngSubmit)="submitData(productForm)">
+    <div class="form-row">
+      <input type="hidden"  name="_id" [(ngModel)]="product._id"/>
+      <div class="form-group col-md-6">
+        <label for="ten">Name:</label>
+        <input type="text" class="form-control" id="ten" [(ngModel)]="product.ten" value="{{products.ten}}">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="tien">Price:</label>
+        <input type="text" class="form-control" id="tien" [(ngModel)]="product.tien" value="{{products.tien}}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="soLuong">Quantity:</label>
+      <input type="number" class="form-control" id="soLuong" [(ngModel)]="product.soLuong" value="{{products.soLuong}}" >
+    </div>
+    <div class="form-group">
+      <label for="thongSo.thongSo1">Information 1:</label>
+      <input type="text" class="form-control" id="thongSo.thongSo1" [(ngModel)]="products.thongSo.thongSo1" value="{{products.thongSo.thongSo1}}">
+    </div>
+    <div class="form-group">
+      <label for="thongSo.thongSo2">Information 2:</label>
+      <input type="text" class="form-control" id="thongSo.thongSo2" [(ngModel)]="products.thongSo.thongSo2" value="{{products.thongSo.thongSo2}}">
+    </div>
+    <div class="form-group">
+      <label for="thongSo.thongSo3">Information 3:</label>
+      <textarea  rows="1" type="text" class="form-control" id="thongSo.thongSo3" [(ngModel)]="products.thongSo.thongSo3" value="{{products.thongSo.thongSo3}}"></textarea>
+    </div>
+    <div class="form-group" style="text-align: center;">
+    <button type="submit" class="btn btn-primary">Edit</button>
+    <div  class="btn btn-secondary" (click)=" goBack()" style="margin-left: 15px;">Back</div>
+  </div>
+  </form>
+</div>

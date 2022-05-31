@@ -1,0 +1,42 @@
+[
+    {
+        "customers":"Trang",
+        "staff":"Uchiha Sasuke",
+        "service":"Phone",
+        "consultingContent":"wwwwwwwwweqwrwqrwqeqweqwewsdaweweqeqw",
+        "level":"high"
+
+    },
+    {
+        "customers":"Thảo",
+        "staff":"Luân",
+        "service":"live",
+        "consultingContent":"wwwwwwwwweqwrwqrwqeqweqwewsdaweweqeqw",
+        "level":"low"
+
+    },
+    {
+        "customers":"minh",
+        "staff":"khong co",
+        "service":"Phone",
+        "consultingContent":"wwwwwwwwweqwrwqrwqeqweqwewsdqqqqqaweweqeqw",
+        "level":"high"
+
+    },
+    {
+        "customers":"Luan",
+        "staff":"thao",
+        "service":"Phone",
+        "consultingContent":"wwwqqqqwwwwwweqwrwqrwqeqweqwewsdaweweqeqw",
+        "level":"high"
+
+    },
+    {
+        "customers":"anh",
+        "staff":"phu",
+        "service":"Phone",
+        "consultingContent":"wwwwwwwwweqwrwqrwqeqweqwewwsdaweweqeqw",
+        "level":"high"
+
+    }
+]

@@ -1,0 +1,65 @@
+
+ 
+<div class="container-customer">
+    <div class="container-customer-header">
+        <h4>Cusomter Infomation</h4>
+    </div>
+    <div class="container-invoice-content">
+        <div class="container-invoice-content-1">
+            <div class="show">
+                <label for="">Show</label>
+                <select name="" id="">
+                    <option value="">5</option>
+                    <option value="">10</option>
+                </select>
+            </div>
+            <div class="search">
+                <label for="">Search:</label>
+                <input type="text" name="firstName" [(ngModel)]="firstName"  >
+            </div>
+        </div>
+        <div class="container-invoice-content-2">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th  scope="col" >ID # <span class="fa fa-sort" aria-hidden="true" ></span></th>
+                    <th scope="col" >Customer<i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Register Date  <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Mail <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">phone <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Country <i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Total Order<i class="fa fa-sort" aria-hidden="true"></i></th>
+                    <th scope="col">Actions<i class="fa fa-sort" aria-hidden="true"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                  <tr *ngFor=" let p of users ;index as i ">
+                    <td>{{i + 1}}</td>
+                    <td>{{p.firstName}}</td>
+                    <td>{{p.resgiterDate}}</td>
+                    <td>{{p.email}}</td>
+                    <td>{{p.phone}}</td>
+                    <td>{{p.country}}</td>
+                    <td>{{p.totalOrder}}</td>
+                    <td><i _ngcontent-yed-c55="" aria-hidden="true" class="fa fa-pencil" style="padding:6px 12px;"></i>
+                        <i _ngcontent-lpn-c55="" aria-hidden="true" class="fa fa-trash" style="padding:6px 12px;"></i></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+        <div class="container-invoice-content-3">
+            <div class="content-3-showing">
+                <div>Showing 1 to 5 of 30 entries</div>
+            </div>
+            <div class="content-3-transition">
+                    <div class="content-3-transition-child">
+                        <div>Previous</div>
+                        <div style="background-color: #7258db;">1</div>
+                        <div>Next</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

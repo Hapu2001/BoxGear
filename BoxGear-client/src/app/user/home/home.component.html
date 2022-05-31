@@ -1,0 +1,89 @@
+
+
+    <div id="modal">
+        <div class="content--slider" >
+            <div class="content--slider-left">
+                <h1>The best place to find your dream</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat purus suscipit turpis sed vitae</p>
+                <div><button type="button" class="btn btn-primary">Start exploring</button></div>
+
+            </div>
+            <div class="content--slider-right">
+                    <div class="content--slider-right-1">
+                        <div>
+                            <img src="https://theme.hstatic.net/1000026716/1000440777/14/solid5.jpg?v=25954" alt="">
+                        </div>
+                        <div>
+                            <img src="https://theme.hstatic.net/1000026716/1000440777/14/solid1.jpg?v=25954" alt="">
+                        </div>
+                    </div>
+                    <div class="content--slider-right-2">
+                        <div>
+                            <img src="https://theme.hstatic.net/1000026716/1000440777/14/solid5.jpg?v=25954" alt="">
+                        </div>
+                        <div>
+                            <img src="https://theme.hstatic.net/1000026716/1000440777/14/solid1.jpg?v=25954" alt="">
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+        <!-- <div class="content--top">
+            <div class="content--top--col--1 content--top--col">
+                
+                    <img src="/assets/image/BODY/content--top1.png" alt="">
+             
+            </div>
+            <div class="content--top--col--2 content--top--col">
+                
+                    <img src="/assets/image/BODY/content--top2.png" alt="">
+                
+            </div>
+            <div class="content--top--col--3 content--top--col">
+                
+                    <img src="/assets/image/BODY/content--top3.png" alt="">
+               
+            </div>
+        </div> -->
+      
+        <div class="content--center--head">
+            <div class="center--head">
+               Tất cả sản phẩm
+            </div>
+            <div class="center--hr">
+            </div>
+        </div>
+        <div class="div--container">
+            <div class="content--center"  >
+                <div class="content--center--body" id="center--body--col--1">
+                   
+                    <div class="center--body--col--1" *ngFor="let c of products"   >
+                        <div class="product--col" >
+                            <div class="product--col--img">
+                                
+                               <img src="{{c.hinh}}" alt="" >
+                                <div class="product--col--button" routerLink="/detailProduct/{{c._id}}" routerLinkActive="active">
+                                    <span  class="product--button--left"  >
+                                        Click để xem chi tiết 
+                                    </span>
+                                    <span  class="product--button--right" id="product--button--right">
+                                         Đặt hàng 
+                                    </span>   
+                                </div>
+                            </div>
+                            <div  class="product--name"><h2 routerLink="/detailProduct/{{c._id}}" routerLinkActive="active"  class="product--name">{{c.ten}}</h2></div>
+                            <div class="product--col--price">
+                                <del>{{c.tien}}</del><br>
+                                <div class="product--price--sale" >{{c.tien}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    
+
+
+
